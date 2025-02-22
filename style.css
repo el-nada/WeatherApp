@@ -56,6 +56,7 @@ body::before {
     border-color: transparent;
     padding-right: 35px;
     font-size: medium;
+    transition: border-color 0.3s ease-in-out;
 }
 
 
@@ -63,6 +64,10 @@ body::before {
     background-color: rgb(250, 250, 250, 0.1);
 }
 
+.city-input:focus{
+    border-color: rgb(253, 255, 250, 0.15);
+    outline:none ;
+}
 .city-input::placeholder {
     color: white;
 }
@@ -171,6 +176,10 @@ body::before {
     border-radius: 12px;
 }
 
+.forcast-item:hover{
+    background-color: rgb(250, 250, 250, 0.15);
+}
+
 .forcast-img{
     width: 80px; 
     height: 80px; 
@@ -179,4 +188,29 @@ body::before {
 .regular-text{
     font-size: 14px;
     text-align: center;
+}
+
+.search{
+    margin-top: 40px;
+    text-align: center;
+}
+.search-image{
+    margin-bottom: 20px;
+    width: 260px;
+    height: 260px;
+}
+.search-message{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.not-found{
+    margin-top: 40px;
+    text-align: center;
+}
+.not-found-image{
+    margin-bottom: 20px;
+    width: 260px;
+    height: 260px;
 }

@@ -9,6 +9,7 @@
 </head>
 <body>
     <main class="main-container">
+
         <header class="input-container">
             <input type="text" class="city-input" placeholder="Search city">
             <button class="search-button">
@@ -17,70 +18,75 @@
                 </span>
             </button>
         </header>
-        <section class="weather-info-container">
-            <div class="location-date-container">
-                <div class="location-container">
+
+        <section class="information" style="display: none;">
+
+            <section class="weather-info-container">
+                <div class="location-date-container">
+                    <div class="location-container">
+                        <span class="material-symbols-outlined">
+                            location_on
+                        </span>
+                        <h4 class="location-text">Casablanca</h4>
+                    </div>
+                    <h4 class="date-text">Fri, 21 Feb</h4>
+            </section>
+
+            <section class="weather-summary-container">
+                <img src="assets/weather/clear.svg" class="weather-img">
+                <div class="weather-summary-text">
+                    <h1 class="temperature">
+                        25°C
+                    </h1>
+                    <h3 class="condition">
+                        Sunny
+                    </h3>
+                </div>
+            </section>
+
+            <section class="weather-conditions-container">
+                <div class="humidity-container">
                     <span class="material-symbols-outlined">
-                        location_on
+                        humidity_low
                     </span>
-                    <h4 class="location-text">Casablanca</h4>
+                    <div class="humidity-information">
+                        <h3>Humidity</h3>
+                        <h4 class="humidity-info">22%</h4>
+                    </div>
                 </div>
-                <h4 class="date-text">Fri, 21 Feb</h4>
-        </section>
-        <section class="weather-summary-container">
-            <img src="assets/weather/clear.svg" class="weather-img">
-            <div class="weather-summary-text">
-                <h1 class="temperature">
-                    25°C
-                </h1>
-                <h3 class="condition">
-                    Sunny
-                </h3>
-            </div>
-        </section>
-        <section class="weather-conditions-container">
-            <div class="humidity-container">
-                <span class="material-symbols-outlined">
-                    humidity_low
-                </span>
-                <div class="humidity-info">
-                    <h3>Humidity</h3>
-                    <h4 class="humidity-info">22%</h4>
+                <div class="wind-container">
+                    <span class="material-symbols-outlined" >
+                        air
+                    </span>
+                    <div class="wind-information">
+                        <h3>Wind Speed</h3>
+                        <h4 class="wind-info">2 Km/s</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="wind-container">
-                <span class="material-symbols-outlined" >
-                    air
-                </span>
-                <div class="wind-info">
-                    <h3>Wind Speed</h3>
-                    <h4 class="wind-info">2 Km/s</h4>
+            </section>
+
+            <section class="forcast-container">
+                <div class="forcast-item">
+                    <h3 class="forcast-date regular-text">Sat, 22 Feb</h3>
+                    <img src="assets/weather/rain.svg" class="forcast-img">
+                    <h3 class="forcast-temperature regular-text">16°C</h3>
                 </div>
-            </div>
+            </section>
+
         </section>
 
-        <section class="forcast-container">
-            <div class="forcast-item">
-                <h3 class="forcast-date regular-text">Sat, 22 Feb</h3>
-                <img src="assets/weather/rain.svg" class="forcast-img">
-                <h3 class="forcast-temperature regular-text">16°C</h3>
-            </div>
-            <div class="forcast-item">
-                <h3 class="forcast-date regular-text">Sat, 22 Feb</h3>
-                <img src="assets/weather/rain.svg" class="forcast-img">
-                <h3 class="forcast-temperature regular-text">16°C</h3>
-            </div>
-            <div class="forcast-item">
-                <h3 class="forcast-date regular-text">Sat, 22 Feb</h3>
-                <img src="assets/weather/rain.svg" class="forcast-img">
-                <h3 class="forcast-temperature regular-text">16°C</h3>
-            </div>
-            <div class="forcast-item">
-                <h3 class="forcast-date regular-text">Sat, 22 Feb</h3>
-                <img src="assets/weather/rain.svg" class="forcast-img">
-                <h3 class="forcast-temperature regular-text">16°C</h3>
-            </div>
+        <section class="search">
+            <img src="assets/message/search-city.png" class="search-image">
+            <h1>Search city</h1>
+            <h4 class="search-message">Find out the weather conditions of any city</h4>
+        </section>
+
+        <section class="not-found" style="display: none;">
+            <img src="assets/message/not-found.png" class="not-found-image">
+            <h1>Search city</h1>
+            <h4 class="search-message">Find out the weather conditions of any city</h4>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
